@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.red{
+ background-color: rgba(163, 225, 69, 0.968);
+ height: 55px;
+ color: aliceblue;
+}
+
+.green{
+    background-color: yellow;
+    color: red;
+}

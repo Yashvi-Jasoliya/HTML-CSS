@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container{
+    background-color: aliceblue;
+    width: 50px;
+}
+
+.blue{
+    background-color: blue;
+    width: 50px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            height: 146px;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            /* transform: translate(134px,56px) rotatex(45deg);
+            transform-origin: 0;  */
+            /* transform: scale(4,5); */
+            /* transform: skew(10deg,10deg); */
+        }
+        img{
+             width: 146px;
+             height: 455px;
+            /* transition-property: width;
+            transition-duration: 3s;   ..3sec ni speed thi toggle thse
+            transition-timing-function: ease-in;
+            transition-delay: 2s;  .. 2sec pachi start thse toggle  */
+            transition: width 1s ease-in-out, height 4s ease-in;
+        }
+        /* img:hover{
+            width: 56px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          <img id="myImage" src="https://images.unsplash.com/photo-1659535844436-64344882b939?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" width="960">
+          <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width = '146px'
+    myImage.style.height = '16px'
+    btn.addEventListener("click", ()=>{
+        myImage.style.height = '456px'
+        if(myImage.style.width == '546px'){
+        myImage.style.width ="146px";
+    }
+    else if(myImage.style.width =='146px'){
+        myImage.style.width = "546px";
+    }
+
+    })
+    
+</script>
+</html>
